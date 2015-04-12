@@ -37,8 +37,6 @@ public class PPal {
         tipopago.setCdtipopago(1);
         tipopago.setDsdescripcion("Credito");
         
-        
-        
         Transaccion transaccion = new Transaccion();
         transaccion.setCdtransaccion(1);
         transaccion.setCdtipopago(tipopago);

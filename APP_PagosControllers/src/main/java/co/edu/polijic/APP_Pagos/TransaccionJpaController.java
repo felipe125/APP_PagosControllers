@@ -49,7 +49,7 @@ public class TransaccionJpaController implements Serializable {
             em = getEntityManager();
             em.getTransaction().begin();
             TipoPago cdtipopago = transaccion.getCdtipopago();
-            if (cdtipopago != null) {
+                if (cdtipopago != null) {
                 cdtipopago = em.getReference(cdtipopago.getClass(), cdtipopago.getCdtipopago());
                 transaccion.setCdtipopago(cdtipopago);
             }
